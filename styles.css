@@ -38,7 +38,8 @@ body, html {
     display: inline-flex;
     position: absolute;
     justify-content: center;
-    top: 50%;
+    align-items: center;
+    top: 33%;
     left: 50%;
     width: calc(100%);
     transform: translate(-50%, -50%);
