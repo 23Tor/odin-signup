@@ -7,6 +7,10 @@
     --chamoisee: #9F7F57ff;
     --bone: #DAD1C3ff;
     --lion: #AF987Cff;
+    --seasalt: #f9fafcff;
+    --timberwolf: #cec8bdff;
+    --persian-orange: #d6905fff;
+    --taupe: #3d362eff;
 }
 
 body, html {
@@ -17,7 +21,7 @@ body, html {
 
 .container {
     display: flex;
-    height: 100%;
+    height: 100vh;
 }
 
 /* Sidebar */
@@ -52,13 +56,33 @@ body, html {
 
 
 /* Main */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
 .content {
     flex: 2;
-    background-color: var(--khaki);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--timberwolf);
     font-family: Arial, Helvetica, sans-serif;
     color: black;
 }
 
+.top-content {
+    padding: 20px;
+}
+.center-container {
+    display: flex;
+    background-color: var(--seasalt);
+    box-shadow: 0px 6px 9px 0px rgba(0,0,0,0.16);
+}
 .center-content {
-    background-color: var(--bone);
+    padding: 20px;
+}
+
+.bottom-content {
+    padding: 20px;
 }
