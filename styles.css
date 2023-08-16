@@ -1,3 +1,4 @@
+/* Font Imports */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Rajdhani&display=swap');
 
 /* CSS HEX */
@@ -13,12 +14,14 @@
     --taupe: #3d362eff;
 }
 
+/* Reset */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
+/* Container */
 .container {
     display: flex;
     height: 100vh;
@@ -54,35 +57,57 @@ body, html {
     font-size: 3rem;
 }
 
-
-/* Main */
-.container {
-    display: flex;
-    height: 100vh;
-}
-
+/* Main Content */
 .content {
     flex: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: var(--timberwolf);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial', 'Helvetica', sans-serif;
     color: black;
 }
 
-.top-content {
-    padding: 20px;
-}
-.center-container {
-    display: flex;
-    background-color: var(--seasalt);
-    box-shadow: 0px 6px 9px 0px rgba(0,0,0,0.16);
-}
-.center-content {
+.top-content,
+.center-content,
+.bottom-content {
     padding: 20px;
 }
 
-.bottom-content {
-    padding: 20px;
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid var(--khaki);
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: var(--persian-orange);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--chamoisee);
 }
