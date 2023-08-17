@@ -4,6 +4,7 @@ const passwordConfirmation = document.getElementById("passwordconf")
 const passwordPattern = new RegExp("(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}")
 const submitButton = document.getElementById("submit-button")
 
+// Functions
 var checkMatch = function () {
   if (document.getElementById('psw').value ==
     document.getElementById('passwordconf').value) {
