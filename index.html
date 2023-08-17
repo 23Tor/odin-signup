@@ -47,10 +47,10 @@
                                 <input type="email" id="email"><br>
                                 PASSWORD<br>
                                 <label for="psw"></label>
-                                <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" onkeyup="checkFormat();"
                                     title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
                                     required>
-                                <span id="passwrd-message"></span>
+                                <span id="password-message"></span>
                             </div>
                             <div class="form-column">
                                 LAST NAME<br>
