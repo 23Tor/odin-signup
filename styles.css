@@ -71,13 +71,19 @@ body, html {
 .center-content,
 .bottom-content {
     padding: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.top-content {
+    font-weight: bolder;
+    font-size: 20px;
 }
 
 .center-content {
     background-color: var(--seasalt);
     -webkit-box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.35); 
     box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.35);
-    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
 }
 
 /* Form Styling */
@@ -111,7 +117,7 @@ input[type="password"] {
 button[type="submit"] {
     margin-top: 15px;
     padding: 10px 20px;
-    width: 73%;
+    width: 50vh;
     background-color: var(--persian-orange);
     color: white;
     border: none;
